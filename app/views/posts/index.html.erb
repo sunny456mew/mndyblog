@@ -1,0 +1,14 @@
+<h1>Listing Posts <a href='/posts/new' class='btn btn-default pull-right'%>New Post</a></h1>
+
+
+<ul class='main-list'>
+    <% @posts.each do |post| %>
+      <li class='row-fluid well'>
+        <div class='span6'><%= link_to post.title , post %></div>
+        <td class= 'pull-right' >
+          <%= post.body %>
+          
+        </td>
+      </li>
+    <% end %>
+</ul>
