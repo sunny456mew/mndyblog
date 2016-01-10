@@ -47,9 +47,15 @@ group :development do
 
    #A collection of useful Rails generator scripts for scaffolding, layout files, authentication, and more.
   gem 'nifty-generators', :group => :development
-
-  #OmniAuth is a flexible authentication system utilizing Rack middleware.
-  gem 'omniauth'
+ 
 end
+
 gem 'rails_12factor', group: :production
+
+
+ #OmniAuth is a flexible authentication system utilizing Rack middleware.
+    gem 'omniauth'
+  gem 'omniauth-facebook'
+  gem 'omniauth-twitter'
+  gem 'omniauth-github'
 
